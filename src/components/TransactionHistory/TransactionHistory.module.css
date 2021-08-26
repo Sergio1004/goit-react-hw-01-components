@@ -1,0 +1,29 @@
+.transactionHistory {
+  margin: auto;
+  max-width: 900px;
+  background-color: #dddada;
+  margin-bottom: 30px;
+}
+
+.transactionHistory th {
+  width: 300px;
+  padding: 15px;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgb(87, 188, 201);
+}
+
+.transactionHistory td {
+  padding: 10px;
+  color: #8a8a8a;
+  /* background-color: white; */
+  text-transform: capitalize;
+}
+
+.transactionHistory tr:nth-child(2n) {
+  background-color: #f8f6f6;
+}
+
+.transactionHistory tr:nth-child(2n + 1) {
+  background-color: white;
+}
