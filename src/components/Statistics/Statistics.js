@@ -8,7 +8,11 @@ function Statistics({ title, stats }) {
 
       <ul className={s.statList}>
         {stats.map(({ id, label, percentage }) => (
-          <li className={s.item} key={id}>
+          <li
+            className={s.item}
+            key={id}
+            style={{ backgroundColor: setRandomBgColour() }}
+          >
             <span className={s.label}>{label}</span>
             <span className={s.percentage}>{percentage}%</span>
           </li>
@@ -16,6 +20,10 @@ function Statistics({ title, stats }) {
       </ul>
     </section>
   );
+}
+
+function setRandomBgColour() {
+  return '#' + Math.floor(Math.random() * 16777215).toString(16);
 }
 
 Statistics.propTypes = {
